@@ -1,0 +1,44 @@
+1. 头文件
+2. CUDA_CHECK宏
+3. ReLU Kernel
+
+4. 设置n和bytes
+5. 创建h_input、h_cpu_output、h_gpu_output
+6. 初始化输入
+
+7. 记录CPU开始时间
+8. CPU执行ReLU
+9. 记录CPU结束时间
+10. 计算cpu_ms
+11. 打印CPU信息
+
+12. 创建d_input和d_output
+13. cudaMalloc两块显存
+14. HostToDevice复制
+
+15. 设置threads_per_block
+16. 计算blocks
+
+17. 预热10次Kernel
+18. 检查Kernel错误
+19. 等待预热完成
+
+20. 创建gpu_start和gpu_stop
+21. 设置benchmark_iterations=100
+22. Record(start)
+23. 执行100次Kernel
+24. 检查Kernel错误
+25. Record(stop)
+26. Synchronize(stop)
+
+27. 获取total_gpu_ms
+28. 再计算average_gpu_ms
+
+29. DeviceToHost复制
+30. CPU/GPU结果验证
+31. 打印GPU时间
+32. 计算speed_ratio
+
+33. Destroy两个Event
+34. cudaFree两块显存
+35. 根据验证结果return

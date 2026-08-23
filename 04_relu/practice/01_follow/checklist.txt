@@ -1,0 +1,21 @@
+1. 引入头文件
+2. 定义CUDA_CHECK
+3. 定义ReLU Kernel
+4. 计算一维线程全局下标idx
+5. 检查idx是否越界
+6. 使用三目运算符完成ReLU
+
+7. 创建包含正数、负数和0的CPU输入
+8. 计算元素数量n和字节数bytes
+9. 创建CPU参考结果和GPU返回结果
+10. CPU计算ReLU参考结果
+11. 创建GPU输入输出指针
+12. 申请GPU显存
+13. 输入从CPU复制到GPU
+14. 计算Block数量
+15. 启动ReLU Kernel
+16. 检查并等待GPU
+17. GPU结果复制回CPU
+18. 逐元素比较CPU和GPU结果
+19. 输出PASS或FAIL
+20. 释放GPU显存

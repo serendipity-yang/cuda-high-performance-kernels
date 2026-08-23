@@ -1,0 +1,30 @@
+1. 引入头文件
+2. 定义CUDA_CHECK宏
+3. 定义ReLU Kernel
+
+4. 设置输入规模n和bytes
+5. 创建CPU输入与两份输出
+6. 初始化输入数据
+
+7. steady_clock记录CPU开始时间
+8. CPU执行ReLU
+9. steady_clock记录CPU结束时间
+10. duration转换成毫秒并调用count
+
+11. 创建GPU指针
+12. 申请GPU显存
+13. HostToDevice复制输入
+14. 配置blocks和threads
+
+15. 预热Kernel
+16. 创建gpu_start和gpu_stop事件
+17. 连续运行100次Kernel
+18. Event计算总时间
+19. 计算平均Kernel时间
+
+20. DeviceToHost复制结果
+21. 验证CPU与GPU结果
+22. 打印时间和加速比
+23. 销毁Event
+24. 释放显存
+25. 返回验证结果

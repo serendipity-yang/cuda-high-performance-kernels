@@ -1,0 +1,13 @@
+1. 引入头文件
+2. 编写 vector_add Kernel
+3. 创建 CPU 输入输出数组
+4. 初始化 CPU 输入
+5. 创建 GPU 指针
+6. 申请 GPU 显存
+7. 将输入复制到 GPU
+8. 计算 blocks 和 threads
+9. 启动 Kernel
+10. 等待 GPU 完成
+11. 将结果复制回 CPU
+12. 打印或检查结果
+13. 释放 GPU 显存

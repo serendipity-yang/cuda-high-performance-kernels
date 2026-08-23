@@ -1,0 +1,24 @@
+1. 引入CUDA和C++头文件
+2. 定义CUDA_CHECK宏
+3. 定义matrix_add Kernel
+4. 计算全局列号col
+5. 计算全局行号row
+6. 判断row和col是否越界
+7. 将(row,col)转换成一维idx
+8. 计算c[idx] = a[idx] + b[idx]
+
+9. 在main中定义height=3、width=5
+10. 计算element_count和bytes
+11. 创建h_a、h_b、h_c
+12. 使用两层for循环初始化输入
+13. 创建d_a、d_b、d_c
+14. 分别为d_a、d_b、d_c申请显存
+15. 把h_a、h_b复制到GPU
+16. 定义二维Block：dim3(2,2)
+17. 向上取整计算二维Grid
+18. 启动Kernel
+19. 检查Kernel启动并等待GPU
+20. 把d_c复制回h_c
+21. 按矩阵格式打印h_c
+22. 释放三块GPU显存
+23. 返回EXIT_SUCCESS
