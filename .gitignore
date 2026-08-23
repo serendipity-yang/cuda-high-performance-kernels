@@ -1,0 +1,6 @@
+*.o
+*.out
+*.exe
+*/**/*_follow
+*/**/*_rebuild
+*/**/*_modify
