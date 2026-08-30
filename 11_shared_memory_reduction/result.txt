@@ -1,0 +1,49 @@
+# Shared Memory Reduction Result
+
+
+## Environment
+
+
+GPU:
+
+RTX 5070 Laptop
+
+
+CUDA:
+
+13.1
+
+
+
+## Test Configuration
+
+
+Input:
+
+1 2 3 4 5 6 7 8
+
+
+
+## Execution Output
+
+
+input: 1 2 3 4 5 6 7 8
+
+
+CPU sum = 36
+
+
+GPU sum = 36
+
+
+correct = true
+
+
+
+## Verification
+
+
+The GPU reduction result matches the CPU reference result.
+
+Correctness: PASS
+

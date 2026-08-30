@@ -1,0 +1,47 @@
+# Warp Shuffle Reduction Result
+
+
+## Environment
+
+GPU:
+RTX 5070 Laptop
+
+
+CUDA:
+13.1
+
+
+## Configuration
+
+Input size:
+
+n = 4194304
+
+
+Threads per block:
+
+256
+
+
+Number of blocks:
+
+16384
+
+
+## Correctness Check
+
+
+CPU sum:
+
+4.1943e+06
+
+
+GPU sum:
+
+4.1943e+06
+
+
+Result:
+
+PASS
+
