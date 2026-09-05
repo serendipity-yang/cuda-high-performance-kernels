@@ -1,5 +1,5 @@
 # =====================
-# Ignore binaries
+# CUDA build outputs
 # =====================
 
 *.out
@@ -8,19 +8,31 @@
 *.exe
 
 
-# CUDA compiled executables
-vector_add
-matrix_add
-relu
-relu_timing
-hello_cuda
-gemm_benchmark
-reduction_naive
-shared_memory_reduction
-warp_shuffle_reduction
-naive_transpose
-tiled_transpose
-multi_block_reduction
+# Executable binaries
+# Executable binaries
+# CUDA executable binaries
+
+**/hello_cuda
+!**/hello_cuda.cu
+
+**/vector_add
+!**/vector_add.cu
+
+**/matrix_add
+!**/matrix_add.cu
+
+**/relu
+!**/relu.cu
+
+**/relu_timing
+!**/relu_timing.cu
+
+
+**/gemm_benchmark
+**/reduction_naive
+**/shared_memory_reduction
+**/warp_shuffle_reduction
+**/multi_block_reduction
 
 
 # =====================
