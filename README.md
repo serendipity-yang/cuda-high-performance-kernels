@@ -1,47 +1,89 @@
 # CUDA High Performance Kernels
 
-CUDA C++ based GPU kernel optimization practice.
+CUDA C++ implementation and optimization practice for GPU computing.
+
+This repository contains CUDA kernel implementations and performance optimization experiments, including memory optimization, parallel algorithms, matrix computation and asynchronous execution.
+
+---
 
 ## Environment
 
-- GPU: RTX 5070 Laptop GPU
+- OS: Ubuntu 22.04 (WSL2)
 - CUDA: 13.1
-- OS: Ubuntu 22.04 WSL
+- Compiler: nvcc
+- GPU: RTX 5070 Laptop GPU
 
 
-## Implemented Kernels
+---
 
-### Basic Kernels
+## Contents
 
+
+## 01. Basic CUDA Programming
+
+- Hello CUDA
 - Vector Add
 - Matrix Add
 - ReLU
 
 
-### Memory Optimization
+## 02. GPU Memory Optimization
 
-- Coalesced Memory Access
+- CUDA Execution Model
+- Global Memory Access Pattern
+- Memory Coalescing
 - Shared Memory
 - Bank Conflict
+- Padding Optimization
 
 
-### Parallel Reduction
+## 03. Parallel Algorithm Optimization
 
 - Naive Reduction
 - Shared Memory Reduction
 - Warp Shuffle Reduction
 
 
-### Matrix Computation
+## 04. Matrix Computation
 
 - Naive GEMM
 - Tiled GEMM
 - cuBLAS Comparison
 
 
-### Asynchronous Execution
+## 05. Deep Learning Operators
+
+- Softmax
+- LayerNorm
+- Activation Function
+- Operator Fusion
+
+
+## 06. CUDA Runtime Optimization
 
 - CUDA Stream
+- Async Memory Copy
 - Pinned Memory
-- Async Copy
+- Pipeline Execution
 
+
+---
+
+## Optimization Topics
+
+- Memory Coalescing
+- Shared Memory Optimization
+- Warp-Level Programming
+- Reduction Optimization
+- Tile-Based Computation
+- Kernel Fusion
+
+
+---
+
+## Future Work
+
+- Nsight Systems Analysis
+- Nsight Compute Profiling
+- Tensor Core Optimization
+- FP16/INT8 Kernel Optimization
