@@ -1,34 +1,47 @@
-# CUDA Kernel Optimization Learning
+# CUDA High Performance Kernels
 
-
-This repository records my CUDA programming learning and GPU optimization experiments.
-
+CUDA C++ based GPU kernel optimization practice.
 
 ## Environment
 
-GPU:
-RTX 5070 Laptop
+- GPU: RTX 5070 Laptop GPU
+- CUDA: 13.1
+- OS: Ubuntu 22.04 WSL
 
 
-CUDA:
-13.1
+## Implemented Kernels
+
+### Basic Kernels
+
+- Vector Add
+- Matrix Add
+- ReLU
 
 
-## Topics
+### Memory Optimization
+
+- Coalesced Memory Access
+- Shared Memory
+- Bank Conflict
 
 
-|Chapter|Topic|Status|
-|-|-|-|
-|01|CUDA Basics|Done|
-|02|Vector Add|Done|
-|06|Memory Coalescing|Done|
-|07|Matrix Transpose|Learning|
-|10|Reduction|Done|
-|12|Warp Shuffle|Done|
-|16|GEMM|TODO|
+### Parallel Reduction
+
+- Naive Reduction
+- Shared Memory Reduction
+- Warp Shuffle Reduction
 
 
-## Goal
+### Matrix Computation
 
-Learn GPU programming and prepare for AI inference optimization.
+- Naive GEMM
+- Tiled GEMM
+- cuBLAS Comparison
+
+
+### Asynchronous Execution
+
+- CUDA Stream
+- Pinned Memory
+- Async Copy
 
