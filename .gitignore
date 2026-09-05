@@ -1,6 +1,47 @@
-*.o
+# =====================
+# Ignore binaries
+# =====================
+
 *.out
+*.o
+*.obj
 *.exe
-*/**/*_follow
-*/**/*_rebuild
-*/**/*_modify
+
+
+# CUDA compiled executables
+vector_add
+matrix_add
+relu
+relu_timing
+hello_cuda
+gemm_benchmark
+reduction_naive
+shared_memory_reduction
+warp_shuffle_reduction
+naive_transpose
+tiled_transpose
+multi_block_reduction
+
+
+# =====================
+# Build
+# =====================
+
+build/
+cmake-build-*/
+
+
+# =====================
+# IDE
+# =====================
+
+.vscode/
+.idea/
+
+
+# =====================
+# Temporary
+# =====================
+
+*.swp
+*.tmp
